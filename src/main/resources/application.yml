@@ -1,0 +1,17 @@
+management:
+  trace:
+    http:
+      enabled: true
+  endpoint:
+    health:
+      show-details: always
+      show-components: always
+  endpoints:
+    web:
+      exposure:
+        include:
+          - info
+          - health
+          - metrics
+          - httptrace
+
