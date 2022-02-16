@@ -1,6 +1,5 @@
 package com.example.demo.feature.user
 
-import com.example.demo.common.RestHttpClient
 import com.example.demo.model.User
 import io.leangen.graphql.annotations.GraphQLQuery
 import io.micrometer.core.annotation.Timed
@@ -9,7 +8,6 @@ import org.springframework.stereotype.Controller
 
 @Controller
 class UserController(
-    val httpClient: RestHttpClient,
     val userService: UserService
 ) {
 

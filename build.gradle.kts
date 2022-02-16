@@ -4,6 +4,7 @@ plugins {
 	id("org.springframework.boot") version "2.7.0-M1"
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
 	id("com.gorylenko.gradle-git-properties") version "2.3.2"
+	id("jacoco")
 	kotlin("jvm") version "1.6.10"
 	kotlin("plugin.spring") version "1.6.10"
 }
@@ -48,4 +49,5 @@ tasks.withType<KotlinCompile> {
 
 tasks.withType<Test> {
 	useJUnitPlatform()
+	finalizedBy("jacocoTestReport")
 }
