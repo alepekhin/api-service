@@ -1,3 +1,4 @@
+api_service.log*
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
